@@ -164,7 +164,7 @@ for i, chunk in enumerate(chunks, 1):
 |-----------|----------|----------------------|-----------|----------|
 | **Nguyễn Quang Hữu** | FixedSizeChunker (chunk_size=500, overlap=50) | 8/10 (Thực nghiệm Gemini) | Đạt Rank 1 trên 100% câu hỏi thuộc tài liệu cá nhân (Câu 2, 3, 5), đạt 2/2 điểm nội dung ở Câu 5; tốc độ xử lý nhanh nhất, overlap 50 ký tự bảo toàn ngữ cảnh thời gian | Có thể chia tách quy trình nhiều bước (Câu 2) nếu vượt quá kích thước 500 ký tự |
 | **Nguyễn Nhật Thăng** | SentenceChunker (max_sentences=3) | 8/10 | Giữ trọn vẹn từng câu quy định độc lập, đạt điểm tương tự cao (0.8098 ở Câu 5) | Dễ mất liên kết tiêu đề cha nếu quy định gồm nhiều câu dài |
-| **Nguyễn Minh Quyền** | RecursiveChunker (chunk_size=200/500) | 6/10 | Linh hoạt theo cấu trúc phân đoạn tự nhiên (`\n\n`, `\n`) | Phân tách dấu đoạn có thể chia cắt 2 mốc thời gian liên quan vào 2 chunk khác nhau (như Câu 5) |
+| **Nguyễn Minh Quyền** | RecursiveChunker (chunk_size=200/500) | 8/10 | Linh hoạt theo cấu trúc phân đoạn tự nhiên (`\n\n`, `\n`) | Phân tách dấu đoạn có thể chia cắt 2 mốc thời gian liên quan vào 2 chunk khác nhau (như Câu 5) |
 | **Vương Việt Hoàng** | Heading & Section-based Chunking | 8/10 | Giữ trọn vẹn toàn bộ một quy trình nhiều bước (như 8 bước ở Câu 2) vào chung 1 section chunk | Phụ thuộc chất lượng chuẩn hóa tiêu đề Markdown; kích thước chunk không đồng đều |
 
 **Chiến lược nào tốt nhất cho chủ đề này? Tại sao?**
