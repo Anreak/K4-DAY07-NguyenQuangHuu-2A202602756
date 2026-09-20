@@ -1,0 +1,1221 @@
+{
+  "embedding_backend": "mock embeddings fallback",
+  "llm_backend": "context-only mock; not an answer generator",
+  "strategy": {
+    "name": "FixedSizeChunker",
+    "chunk_size": 500,
+    "overlap": 50
+  },
+  "warnings": [],
+  "baseline_chunk_size": 300,
+  "document_count": 8,
+  "chunk_count": 337,
+  "inventory": [
+    {
+      "doc_id": "188931",
+      "title": "[Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee | Shopee Trung tâm trợ giúp",
+      "source_url": "https://help.shopee.vn/portal/4/article/188931",
+      "retrieved_at": "2026-09-20",
+      "document_version": "not-stated",
+      "audience": "buyer",
+      "category": "returns-policy",
+      "language": "vi",
+      "file_path": "data/Chinh_sach_thuong_mai_dien_tu/188931.md",
+      "body_characters": 6378,
+      "chunks": 15,
+      "sha256": "c8b85eacb573374103bb7f1ceabb50d66adc66582c9e9b3d2bc3e6d06156b9dd"
+    },
+    {
+      "doc_id": "189477",
+      "title": "[Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả | Shopee Trung tâm trợ giúp",
+      "source_url": "https://help.shopee.vn/portal/4/article/189477",
+      "retrieved_at": "2026-09-20",
+      "document_version": "not-stated",
+      "audience": "buyer",
+      "category": "shipping-fee",
+      "language": "vi",
+      "file_path": "data/Chinh_sach_thuong_mai_dien_tu/189477.md",
+      "body_characters": 5980,
+      "chunks": 14,
+      "sha256": "29c71fe8dfcafa192f418f7082514d519de5a2967adc1986788e3d5bbb6cc519"
+    },
+    {
+      "doc_id": "77245",
+      "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+      "source_url": "https://help.shopee.vn/portal/4/article/77245",
+      "retrieved_at": "2026-09-20",
+      "document_version": "not-stated",
+      "audience": "both",
+      "category": "platform-regulation",
+      "language": "vi",
+      "file_path": "data/Chinh_sach_thuong_mai_dien_tu/77245.md",
+      "body_characters": 77900,
+      "chunks": 173,
+      "sha256": "fc570878611b5a16eec50edf13238b8b2bbe46fcf92705a45b8fa51c1438fc8e"
+    },
+    {
+      "doc_id": "77246",
+      "title": "QUY ĐỊNH VỀ ĐĂNG BÁN SẢN PHẨM TRÊN SHOPEE | Shopee Trung tâm trợ giúp",
+      "source_url": "https://help.shopee.vn/portal/4/article/77246",
+      "retrieved_at": "2026-09-20",
+      "document_version": "not-stated",
+      "audience": "seller",
+      "category": "seller-policy",
+      "language": "vi",
+      "file_path": "data/Chinh_sach_thuong_mai_dien_tu/77246.md",
+      "body_characters": 21560,
+      "chunks": 48,
+      "sha256": "d977fd77289ec68bb4341f5ff0925e4a5eeddef060a9a60a3b1a89dd0e8777c0"
+    },
+    {
+      "doc_id": "77247",
+      "title": "CHÍNH SÁCH CẤM/HẠN CHẾ SẢN PHẨM | Shopee Trung tâm trợ giúp",
+      "source_url": "https://help.shopee.vn/portal/4/article/77247",
+      "retrieved_at": "2026-09-20",
+      "document_version": "not-stated",
+      "audience": "seller",
+      "category": "product-restriction",
+      "language": "vi",
+      "file_path": "data/Chinh_sach_thuong_mai_dien_tu/77247.md",
+      "body_characters": 12878,
+      "chunks": 29,
+      "sha256": "8b72af0d502d89d7ad785b7a6b7da9ce7ad972dd02f814ff3fd08ff6dc87d9af"
+    },
+    {
+      "doc_id": "77251",
+      "title": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN | Shopee Trung tâm trợ giúp",
+      "source_url": "https://help.shopee.vn/portal/4/article/77251",
+      "retrieved_at": "2026-09-20",
+      "document_version": "not-stated",
+      "audience": "both",
+      "category": "returns-policy",
+      "language": "vi",
+      "file_path": "data/Chinh_sach_thuong_mai_dien_tu/77251.md",
+      "body_characters": 19637,
+      "chunks": 44,
+      "sha256": "4899e0e06c086f71d5625bbdec5f1a4450be084763d6f1b0425093233f591ec2"
+    },
+    {
+      "doc_id": "79233",
+      "title": "[Trả hàng/ Hoàn tiền] Hướng dẫn gửi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp",
+      "source_url": "https://help.shopee.vn/portal/4/article/79233",
+      "retrieved_at": "2026-09-20",
+      "document_version": "not-stated",
+      "audience": "buyer",
+      "category": "returns-process",
+      "language": "vi",
+      "file_path": "data/Chinh_sach_thuong_mai_dien_tu/79233.md",
+      "body_characters": 2570,
+      "chunks": 6,
+      "sha256": "4a7226e4ab57a4547f374af539364b1b460ab666451c42ed9e70d80b6423aeec"
+    },
+    {
+      "doc_id": "79467",
+      "title": "[Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp",
+      "source_url": "https://help.shopee.vn/portal/4/article/79467",
+      "retrieved_at": "2026-09-20",
+      "document_version": "not-stated",
+      "audience": "buyer",
+      "category": "returns-process",
+      "language": "vi",
+      "file_path": "data/Chinh_sach_thuong_mai_dien_tu/79467.md",
+      "body_characters": 3519,
+      "chunks": 8,
+      "sha256": "f349e89bfa80815742d51653702f52420f750c3b024bdcdd93c5db41059e84b3"
+    }
+  ],
+  "baseline": [
+    {
+      "doc_id": "188931",
+      "strategies": {
+        "fixed_size": {
+          "count": 24,
+          "avg_length": 294.5
+        },
+        "by_sentences": {
+          "count": 10,
+          "avg_length": 632.8
+        },
+        "recursive": {
+          "count": 27,
+          "avg_length": 234.33333333333334
+        }
+      }
+    },
+    {
+      "doc_id": "79233",
+      "strategies": {
+        "fixed_size": {
+          "count": 10,
+          "avg_length": 284.0
+        },
+        "by_sentences": {
+          "count": 8,
+          "avg_length": 317.75
+        },
+        "recursive": {
+          "count": 10,
+          "avg_length": 255.2
+        }
+      }
+    },
+    {
+      "doc_id": "79467",
+      "strategies": {
+        "fixed_size": {
+          "count": 13,
+          "avg_length": 298.38461538461536
+        },
+        "by_sentences": {
+          "count": 12,
+          "avg_length": 290.25
+        },
+        "recursive": {
+          "count": 15,
+          "avg_length": 232.73333333333332
+        }
+      }
+    }
+  ],
+  "runs": [
+    {
+      "id": 1,
+      "question": "Người mua có thời hạn bao nhiêu ngày kể từ khi đơn hàng giao thành công để gửi yêu cầu Trả hàng/Hoàn tiền đối với hàng thông thường và thực phẩm tươi sống?",
+      "gold_answer": "Người mua có 15 ngày kể từ khi giao hàng thành công để gửi yêu cầu; riêng thực phẩm tươi sống và đông lạnh chỉ có thời hạn 24 giờ.",
+      "gold_source": "`188931.md` & `77251.md` (Điều 3.2)",
+      "metadata_filter": null,
+      "results": [
+        {
+          "id": "77246#11",
+          "content": " quan đến sản phẩm này như thông tin giới thiệu shop, thông tin liên hệ hay thông tin thanh toán.\n\nb. Phải có ít nhất một hình ảnh thật của sản phẩm do chính Người Bán tự chụp. Trong ảnh này, diện tích sản phẩm thật phải chiếm ít nhất 40% diện tích toàn ảnh.\n\nc. Ngôn ngữ trên phông nền hình ảnh là tiếng Việt, không dùng ngôn ngữ nước ngoài.\n\nd. Hình ảnh không chứa yếu tố ghê rợn gây khó chịu cho người xem.\n\ne. Tuyệt đối không được đăng các hình ảnh khỏa thân, khiêu gợi, phản cảm, không phù hợp v",
+          "metadata": {
+            "doc_id": "77246",
+            "title": "QUY ĐỊNH VỀ ĐĂNG BÁN SẢN PHẨM TRÊN SHOPEE | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77246",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "seller",
+            "category": "seller-policy",
+            "language": "vi",
+            "chunk_index": 11
+          },
+          "score": 0.3444183256901785
+        },
+        {
+          "id": "77245#119",
+          "content": " tin, hình ảnh, âm thanh vi phạm pháp luật, thiếu thẩm mỹ, trái với truyền thống lịch sử, văn hóa, đạo đức, thuần phong mỹ tục Việt Nam. \n\nb. Xúc phạm uy tín, danh dự, nhân phẩm của tổ chức, cá nhân.\n\nc. Sử dụng hình ảnh, lời nói, chữ viết của cá nhân khi chưa được cá nhân đó đồng ý, trừ trường hợp được pháp luật cho phép.\n\nd. Cung cấp thông tin, quảng cáo không đúng hoặc gây nhầm lẫn về khả năng kinh doanh, khả năng cung cấp sản phẩm, hàng hóa, dịch vụ của tổ chức, cá nhân kinh doanh sản phẩm, ",
+          "metadata": {
+            "doc_id": "77245",
+            "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77245",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "platform-regulation",
+            "language": "vi",
+            "chunk_index": 119
+          },
+          "score": 0.3209075835099744
+        },
+        {
+          "id": "77245#43",
+          "content": "ePay, Google Pay hoặc thẻ tín dụng/ghi nợ:\n\nShopee chấp nhận thanh toán thẻ của tất cả các ngân hàng tại Việt Nam với điều kiện phải là thẻ của thương hiệu thẻ Visa, Master Card JCB hoặc AMEX.\n\nBước 1: Người Mua tìm hiểu thông tin về sản phẩm, dịch vụ được đăng tin;\n\nBước 2: Người Mua đặt đơn hàng trên Shopee;\n\nBước 3: Người mua thanh toán sử dụng phương thức thanh toán Ví điện tử ShopeePay hoặc thẻ tín dụng/ghi nợ, ApplePay, Google Pay;\n\nBước 4: Shopee xác nhận thông tin Người Mua và chuyển tớ",
+          "metadata": {
+            "doc_id": "77245",
+            "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77245",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "platform-regulation",
+            "language": "vi",
+            "chunk_index": 43
+          },
+          "score": 0.29968009180872607
+        }
+      ],
+      "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 77246):\nquan đến sản phẩm này như thông tin giới thiệu shop, thông tin liên hệ hay thông tin thanh toán.\n\nb. Phải có ít nhất một hình ảnh thật của sản phẩm do chính Người Bán tự chụp. Trong ảnh này, diện tích sản phẩm thật phải chiếm ít nhất 40% diện tích toàn ảnh.\n\nc. Ngôn ngữ trên phông nền hình ảnh là tiếng Việt, không dùng ngôn ngữ nước ngoài.\n\nd. Hình ảnh không chứa yếu tố ghê rợn gây khó chịu cho người xem.\n\ne. Tuyệt đối không được đăng các hình ảnh khỏa thân, khiêu gợi, phản cảm, không phù hợp v\n\n[2] (Nguồn: 77245):\ntin, hình ảnh, âm thanh vi phạm pháp luật, thiếu thẩm mỹ, trái với truyền thống lịch sử, văn hóa, đạo đức, thuần phong mỹ tục Việt Nam. \n\nb. Xúc phạm uy tín, danh dự, nhân phẩm của tổ chức, cá nhân.\n\nc. Sử dụng hình ảnh, lời nói, chữ viết của cá nhân khi chưa được cá nhân đó đồng ý, trừ trường hợp được pháp luật cho phép.\n\nd. Cung cấp thông tin, quảng cáo không đúng hoặc gây nhầm lẫn về khả năng kinh doanh, khả năng cung cấp sản phẩm, hàng hóa, dịch vụ của tổ chức, cá nhân kinh doanh sản phẩm,\n\n[3] (Nguồn: 77245):\nePay, Google Pay hoặc thẻ tín dụng/ghi nợ:\n\nShopee chấp nhận thanh toán thẻ của tất cả các ngân hàng tại Việt Nam với điều kiện phải là thẻ của thương hiệu thẻ Visa, Master Card JCB hoặc AMEX.\n\nBước 1: Người Mua tìm hiểu thông tin về sản phẩm, dịch vụ được đăng tin;\n\nBước 2: Người Mua đặt đơn hàng trên Shopee;\n\nBước 3: Người mua thanh toán sử dụng phương thức thanh toán Ví điện tử ShopeePay hoặc thẻ tín dụng/ghi nợ, ApplePay, Google Pay;\n\nBước 4: Shopee xác nhận thông tin Người Mua và chuyển tớ",
+      "evaluation": {
+        "gold_document_rank": null,
+        "document_only_score": 0,
+        "evidence_groups": [
+          [
+            "15 ngày"
+          ],
+          [
+            "24 giờ",
+            "24h"
+          ]
+        ],
+        "evidence_found": [
+          false,
+          false
+        ],
+        "context_contains_answer_markers": false,
+        "content_score": 0,
+        "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+      },
+      "rubric_score": null
+    },
+    {
+      "id": 2,
+      "question": "Người mua có thể gửi yêu cầu Trả hàng/Hoàn tiền trực tiếp từ trang đơn hàng trên ứng dụng Shopee theo các bước như thế nào?",
+      "gold_answer": "Bước 1: Mở app > Tôi > Chờ giao hàng/Đã giao; Bước 2: Bấm Trả hàng/Hoàn tiền; Bước 3: Chọn tình huống; Bước 4: Chọn sản phẩm; Bước 5: Chọn lý do; Bước 6: Chọn phương án; Bước 7: Điền mô tả, tải ảnh/video bằng chứng, email; Bước 8: Gửi yêu cầu.",
+      "gold_source": "`79233.md` (Mục 1, Cách 1)",
+      "metadata_filter": null,
+      "results": [
+        {
+          "id": "77245#27",
+          "content": ", dịch vụ tương ứng trong phần mô tả sản phẩm, dịch vụ được đăng bán của Người Bán và việc bảo hành sẽ chỉ được thực hiện theo Chính sách bảo hành đã được công bố của Người Bán và/hoặc Nhà sản xuất.\n\nCòn thời hạn bảo hành (dựa trên tem/phiếu bảo hành/hoặc thời điểm kích hoạt bảo hành điện tử)\n\nCòn tem/phiếu bảo hành\n\nSản phẩm bị lỗi kỹ thuật không phải do lỗi của Người Mua\n\nNgười Mua cần lưu ý về một số trường hợp có thể phát sinh chi phí như dưới đây\n\nSản phẩm hết thời hạn bảo hành;\n\nSản phẩm b",
+          "metadata": {
+            "doc_id": "77245",
+            "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77245",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "platform-regulation",
+            "language": "vi",
+            "chunk_index": 27
+          },
+          "score": 0.3629813734179864
+        },
+        {
+          "id": "77245#127",
+          "content": "ý Sàn giao dịch TMĐT Shopee sẽ không chịu trách nhiệm giải quyết trong trường hợp thông báo của các thành viên không đến được Ban quản lý, phát sinh từ lỗi kỹ thuật, lỗi đường truyền, phần mềm hoặc các lỗi khác không do Ban quản lý gây ra.\n\nXI. Quyền và nghĩa vụ của Ban quản lý Sàn giao dịch TMĐT Shopee\n\n1. Quyền của Ban quản lý Sàn giao dịch TMĐT Shopee\n\nCông ty TNHH Shopee giao trách nhiệm cho Ban Quản lý Sàn giao dịch TMĐT Shopee thực hiện các quyền và nghĩa vụ liên quan đến việc quản lý sử d",
+          "metadata": {
+            "doc_id": "77245",
+            "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77245",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "platform-regulation",
+            "language": "vi",
+            "chunk_index": 127
+          },
+          "score": 0.2912361878803906
+        },
+        {
+          "id": "188931#2",
+          "content": " hàng được cập nhật trạng thái ‘Giao hàng thành công’.\n\nĐối với đơn hàng do Người bán tự vận chuyển:\n\n+ 15 ngày kể từ lúc bạn bấm ‘Đã nhận được hàng’, hoặc\n\n+ 20 ngày kể từ lúc đơn hàng được cập nhật trạng thái ‘Lấy hàng thành công’ và bạn không bấm ‘Đã nhận được hàng’.\n\nĐối với các đơn hàng khác: 15 ngày kể từ lúc đơn hàng được cập nhật trạng thái ‘Giao hàng thành công’.\n\n⚠️ Lưu ý:\n\nBạn vẫn có thể gửi yêu cầu Trả hàng/Hoàn tiền sau khi đã bấm nút ‘Đã nhận được hàng’ và vẫn còn trong thời hạn 15",
+          "metadata": {
+            "doc_id": "188931",
+            "title": "[Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/188931",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "buyer",
+            "category": "returns-policy",
+            "language": "vi",
+            "chunk_index": 2
+          },
+          "score": 0.2803629305314777
+        }
+      ],
+      "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 77245):\n, dịch vụ tương ứng trong phần mô tả sản phẩm, dịch vụ được đăng bán của Người Bán và việc bảo hành sẽ chỉ được thực hiện theo Chính sách bảo hành đã được công bố của Người Bán và/hoặc Nhà sản xuất.\n\nCòn thời hạn bảo hành (dựa trên tem/phiếu bảo hành/hoặc thời điểm kích hoạt bảo hành điện tử)\n\nCòn tem/phiếu bảo hành\n\nSản phẩm bị lỗi kỹ thuật không phải do lỗi của Người Mua\n\nNgười Mua cần lưu ý về một số trường hợp có thể phát sinh chi phí như dưới đây\n\nSản phẩm hết thời hạn bảo hành;\n\nSản phẩm b\n\n[2] (Nguồn: 77245):\ný Sàn giao dịch TMĐT Shopee sẽ không chịu trách nhiệm giải quyết trong trường hợp thông báo của các thành viên không đến được Ban quản lý, phát sinh từ lỗi kỹ thuật, lỗi đường truyền, phần mềm hoặc các lỗi khác không do Ban quản lý gây ra.\n\nXI. Quyền và nghĩa vụ của Ban quản lý Sàn giao dịch TMĐT Shopee\n\n1. Quyền của Ban quản lý Sàn giao dịch TMĐT Shopee\n\nCông ty TNHH Shopee giao trách nhiệm cho Ban Quản lý Sàn giao dịch TMĐT Shopee thực hiện các quyền và nghĩa vụ liên quan đến việc quản lý sử d\n\n[3] (Nguồn: 188931):\nhàng được cập nhật trạng thái ‘Giao hàng thành công’.\n\nĐối với đơn hàng do Người bán tự vận chuyển:\n\n+ 15 ngày kể từ lúc bạn bấm ‘Đã nhận được hàng’, hoặc\n\n+ 20 ngày kể từ lúc đơn hàng được cập nhật trạng thái ‘Lấy hàng thành công’ và bạn không bấm ‘Đã nhận được hàng’.\n\nĐối với các đơn hàng khác: 15 ngày kể từ lúc đơn hàng được cập nhật trạng thái ‘Giao hàng thành công’.\n\n⚠️ Lưu ý:\n\nBạn vẫn có thể gửi yêu cầu Trả hàng/Hoàn tiền sau khi đã bấm nút ‘Đã nhận được hàng’ và vẫn còn trong thời hạn 15",
+      "evaluation": {
+        "gold_document_rank": null,
+        "document_only_score": 0,
+        "evidence_groups": [
+          [
+            "Bước 1:"
+          ],
+          [
+            "Bước 2:"
+          ],
+          [
+            "Bước 3:"
+          ],
+          [
+            "Bước 4:"
+          ],
+          [
+            "Bước 5:"
+          ],
+          [
+            "Bước 6:"
+          ],
+          [
+            "Bước 7:"
+          ],
+          [
+            "Bước 8:"
+          ]
+        ],
+        "evidence_found": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "context_contains_answer_markers": false,
+        "content_score": 0,
+        "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+      },
+      "rubric_score": null
+    },
+    {
+      "id": 3,
+      "question": "Khi khiếu nại hàng bị bể vỡ hoặc lỗi, video mở kiện hàng của Người mua cần đáp ứng những tiêu chuẩn kỹ thuật nào về cách quay và dung lượng?",
+      "gold_answer": "Video phải quay liên tục không cắt ghép, rõ nét, thấy 6 mặt kiện hàng, thấy rõ mã vận đơn và tem niêm phong. Dung lượng tối đa: video không quá 100MB (tối đa 1 phút), ảnh không quá 5MB/ảnh.",
+      "gold_source": "`79467.md` (Mục 2 và Mục 4)",
+      "metadata_filter": null,
+      "results": [
+        {
+          "id": "77245#90",
+          "content": "hopee tại thời điểm Shopee phát hiện hành vi vi phạm của thành viên.\n\nf. Thành viên không được thay đổi, chỉnh sửa, gán ghép, sao chép, truyền bá, phân phối, cung cấp và tạo những công cụ tương tự của dịch vụ do Sàn giao dịch TMĐT Shopee cung cấp cho một bên thứ ba nếu không được sự đồng ý của Sàn giao dịch TMĐT Shopee trong bản Quy chế này.\n\ng. Thành viên không được hành động gây mất uy tín của Sàn giao dịch TMĐT Shopee dưới mọi hình thức như gây mất đoàn kết giữa các thành viên bằng cách sử dụ",
+          "metadata": {
+            "doc_id": "77245",
+            "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77245",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "platform-regulation",
+            "language": "vi",
+            "chunk_index": 90
+          },
+          "score": 0.3468865408949844
+        },
+        {
+          "id": "77245#56",
+          "content": "g, nếu có;\n\nh. để duy trì và quản lý bất kỳ bản cập nhật phần mềm nào và/hoặc các bản cập nhật khác và sự hỗ trợ có thể được yêu cầu tùy lúc nhằm đảm bảo Các Dịch Vụ của chúng tôi hoạt động suôn sẻ;\n\ni. để giải quyết hoặc tạo điều kiện thuận lợi cho dịch vụ khách hàng, thực hiện các chỉ thị của bạn, giải quyết hoặc trả lời bất kỳ thắc mắc nào được gửi bởi (hoặc nhằm được gửi bởi) bạn hoặc thay mặt bạn;\n\nj. để liên hệ với bạn hoặc liên lạc với bạn qua điện thoại, tin nhắn văn bản và/hoặc tin nhắn",
+          "metadata": {
+            "doc_id": "77245",
+            "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77245",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "platform-regulation",
+            "language": "vi",
+            "chunk_index": 56
+          },
+          "score": 0.28277134587926667
+        },
+        {
+          "id": "77246#5",
+          "content": "c bộ phận của cơ thể con người;\n\ni. Động vật và chế phẩm từ động vật (bao gồm động vật hoang dã) như: chó, mèo, cá, ốc, chuột, nhím, ốc mượn hồn, hamster, ngà voi, sừng tê giác, cao hổ, da/ lông động vật,...)\n\nj. Những sản phẩm có tính chất phân biệt chủng tộc, xúc phạm đến dân tộc hoặc quốc gia nào đó;\n\nk. Hạn chế tối đa những sản phẩm mang tính cá nhân (như hình cá nhân, hình ảnh của gia đình, hình ảnh của con cái);\n\nl. Vi phạm quyền sở hữu trí tuệ và/hoặc bất kỳ nhãn hiệu hàng hóa nào của bất",
+          "metadata": {
+            "doc_id": "77246",
+            "title": "QUY ĐỊNH VỀ ĐĂNG BÁN SẢN PHẨM TRÊN SHOPEE | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77246",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "seller",
+            "category": "seller-policy",
+            "language": "vi",
+            "chunk_index": 5
+          },
+          "score": 0.27846286912950863
+        }
+      ],
+      "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 77245):\nhopee tại thời điểm Shopee phát hiện hành vi vi phạm của thành viên.\n\nf. Thành viên không được thay đổi, chỉnh sửa, gán ghép, sao chép, truyền bá, phân phối, cung cấp và tạo những công cụ tương tự của dịch vụ do Sàn giao dịch TMĐT Shopee cung cấp cho một bên thứ ba nếu không được sự đồng ý của Sàn giao dịch TMĐT Shopee trong bản Quy chế này.\n\ng. Thành viên không được hành động gây mất uy tín của Sàn giao dịch TMĐT Shopee dưới mọi hình thức như gây mất đoàn kết giữa các thành viên bằng cách sử dụ\n\n[2] (Nguồn: 77245):\ng, nếu có;\n\nh. để duy trì và quản lý bất kỳ bản cập nhật phần mềm nào và/hoặc các bản cập nhật khác và sự hỗ trợ có thể được yêu cầu tùy lúc nhằm đảm bảo Các Dịch Vụ của chúng tôi hoạt động suôn sẻ;\n\ni. để giải quyết hoặc tạo điều kiện thuận lợi cho dịch vụ khách hàng, thực hiện các chỉ thị của bạn, giải quyết hoặc trả lời bất kỳ thắc mắc nào được gửi bởi (hoặc nhằm được gửi bởi) bạn hoặc thay mặt bạn;\n\nj. để liên hệ với bạn hoặc liên lạc với bạn qua điện thoại, tin nhắn văn bản và/hoặc tin nhắn\n\n[3] (Nguồn: 77246):\nc bộ phận của cơ thể con người;\n\ni. Động vật và chế phẩm từ động vật (bao gồm động vật hoang dã) như: chó, mèo, cá, ốc, chuột, nhím, ốc mượn hồn, hamster, ngà voi, sừng tê giác, cao hổ, da/ lông động vật,...)\n\nj. Những sản phẩm có tính chất phân biệt chủng tộc, xúc phạm đến dân tộc hoặc quốc gia nào đó;\n\nk. Hạn chế tối đa những sản phẩm mang tính cá nhân (như hình cá nhân, hình ảnh của gia đình, hình ảnh của con cái);\n\nl. Vi phạm quyền sở hữu trí tuệ và/hoặc bất kỳ nhãn hiệu hàng hóa nào của bất",
+      "evaluation": {
+        "gold_document_rank": null,
+        "document_only_score": 0,
+        "evidence_groups": [
+          [
+            "liên tục"
+          ],
+          [
+            "không bị cắt ghép"
+          ],
+          [
+            "6 mặt"
+          ],
+          [
+            "mã vận đơn"
+          ],
+          [
+            "niêm phong"
+          ],
+          [
+            "100 MB",
+            "100MB"
+          ],
+          [
+            "1 phút"
+          ],
+          [
+            "5MB",
+            "5 MB"
+          ]
+        ],
+        "evidence_found": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "context_contains_answer_markers": false,
+        "content_score": 0,
+        "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+      },
+      "rubric_score": null
+    },
+    {
+      "id": 4,
+      "question": "Người mua có phải trả phí vận chuyển khi gửi hàng hoàn trả về cho Người bán không?",
+      "gold_answer": "Người mua được miễn phí ship hoàn về nếu chọn hình thức \"Lấy hàng tại nhà\" hoặc \"Gửi hàng tại bưu cục\" liên kết với Shopee; nếu tự sắp xếp thì thanh toán trước và Shopee hỗ trợ hoàn lại sau.",
+      "gold_source": "`189477.md` (Mục 1 và 2)",
+      "metadata_filter": null,
+      "results": [
+        {
+          "id": "77245#146",
+          "content": "ng trường hợp vi phạm nghĩa vụ quy định tại các khoản 8, khoản 9 Điều 36 của Nghị định 52 mà gây thiệt hại.\n\nm. Đối với hoạt động cung cấp dịch vụ khuyến mại trực tuyến (i) Tuân thủ các quy định của luật thương mại và các quy định pháp luật có liên quan về hoạt động khuyến mại, (ii) Bảo vệ thông tin cá nhân của khách hàng theo quy định tại Mục 1, Chương V của Nghị định 52/2013/NĐ-CP đã được sửa đổi, bổ sung (“Nghị định 52”), (iii) Công bố đầy đủ các nội dung như được quy định tại Điều 40 của Ngh",
+          "metadata": {
+            "doc_id": "77245",
+            "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77245",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "platform-regulation",
+            "language": "vi",
+            "chunk_index": 146
+          },
+          "score": 0.37168057976578717
+        },
+        {
+          "id": "77245#84",
+          "content": "các thông tin như: số điện thoại, địa chỉ liên hệ, họ tên, thông tin tài khoản ngân hàng hoặc thông tin tài khoản thanh toán khác (trong trường hợp lựa chọn phương thức thanh toán không dùng tiền mặt trên Sàn Shopee), thông tin, tài liệu chứng minh mình là người tiêu dùng dễ bị tổn thương theo quy định của pháp luật về bảo vệ quyền lợi người tiêu dùng (nếu có).  \n\nc. Người Bán: Để được phép bán hàng trên Shopee, Người Bán phải cung cấp các thông tin bao gồm nhưng không giới hạn tên, số điện thoạ",
+          "metadata": {
+            "doc_id": "77245",
+            "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77245",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "platform-regulation",
+            "language": "vi",
+            "chunk_index": 84
+          },
+          "score": 0.3235024370909262
+        },
+        {
+          "id": "77245#24",
+          "content": "h vụ.\n\nNgười Mua có quyền yêu cầu bảo hành phù hợp với Chính sách bảo hành của Người Bán hoặc Nhà sản xuất khi đáp ứng các điều kiện để được bảo hành theo Chính sách đã công bố của Người Bán và/hoặc Nhà sản xuất.\n\nNgười Mua có quyền khiếu nại, khiếu kiện Người Bán trong trường hợp Người Bán từ chối bảo hành không phù hợp với Chính sách bảo hành đã công bố.\n\nShopee khuyến cáo Người Mua hàng cần kiểm tra các chính sách bảo hành, báo trì đối với hàng hóa có dự định mua trước khi đặt hàng. Shopee sẽ",
+          "metadata": {
+            "doc_id": "77245",
+            "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77245",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "platform-regulation",
+            "language": "vi",
+            "chunk_index": 24
+          },
+          "score": 0.30505810844844683
+        }
+      ],
+      "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 77245):\nng trường hợp vi phạm nghĩa vụ quy định tại các khoản 8, khoản 9 Điều 36 của Nghị định 52 mà gây thiệt hại.\n\nm. Đối với hoạt động cung cấp dịch vụ khuyến mại trực tuyến (i) Tuân thủ các quy định của luật thương mại và các quy định pháp luật có liên quan về hoạt động khuyến mại, (ii) Bảo vệ thông tin cá nhân của khách hàng theo quy định tại Mục 1, Chương V của Nghị định 52/2013/NĐ-CP đã được sửa đổi, bổ sung (“Nghị định 52”), (iii) Công bố đầy đủ các nội dung như được quy định tại Điều 40 của Ngh\n\n[2] (Nguồn: 77245):\ncác thông tin như: số điện thoại, địa chỉ liên hệ, họ tên, thông tin tài khoản ngân hàng hoặc thông tin tài khoản thanh toán khác (trong trường hợp lựa chọn phương thức thanh toán không dùng tiền mặt trên Sàn Shopee), thông tin, tài liệu chứng minh mình là người tiêu dùng dễ bị tổn thương theo quy định của pháp luật về bảo vệ quyền lợi người tiêu dùng (nếu có).  \n\nc. Người Bán: Để được phép bán hàng trên Shopee, Người Bán phải cung cấp các thông tin bao gồm nhưng không giới hạn tên, số điện thoạ\n\n[3] (Nguồn: 77245):\nh vụ.\n\nNgười Mua có quyền yêu cầu bảo hành phù hợp với Chính sách bảo hành của Người Bán hoặc Nhà sản xuất khi đáp ứng các điều kiện để được bảo hành theo Chính sách đã công bố của Người Bán và/hoặc Nhà sản xuất.\n\nNgười Mua có quyền khiếu nại, khiếu kiện Người Bán trong trường hợp Người Bán từ chối bảo hành không phù hợp với Chính sách bảo hành đã công bố.\n\nShopee khuyến cáo Người Mua hàng cần kiểm tra các chính sách bảo hành, báo trì đối với hàng hóa có dự định mua trước khi đặt hàng. Shopee sẽ",
+      "evaluation": {
+        "gold_document_rank": null,
+        "document_only_score": 0,
+        "evidence_groups": [
+          [
+            "Miễn phí trả hàng"
+          ],
+          [
+            "thanh toán trước phí trả hàng"
+          ],
+          [
+            "Shopee sẽ hỗ trợ"
+          ]
+        ],
+        "evidence_found": [
+          false,
+          false,
+          false
+        ],
+        "context_contains_answer_markers": false,
+        "content_score": 0,
+        "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+      },
+      "rubric_score": null
+    },
+    {
+      "id": 5,
+      "question": "Thời gian xử lý yêu cầu Trả hàng / Hoàn tiền là bao lâu?",
+      "gold_answer": "Đối với Người mua, yêu cầu Trả hàng/Hoàn tiền thường được Shopee xử lý trong khoảng 3 - 5 ngày làm việc; thời gian nhận tiền hoàn từ 1 - 14 ngày làm việc.",
+      "gold_source": "`79233.md` (Mục 2)",
+      "metadata_filter": null,
+      "results": [
+        {
+          "id": "77245#69",
+          "content": "công ty sẽ hủy hoặc xóa thông tin nhận dạng ra khỏi dữ liệu cá nhân của người dùng khi Shopee có lý do hợp lý để xác định rằng (i) việc lưu giữ dữ liệu cá nhân đó không còn phục vụ mục đích thu thập dữ liệu cá nhân đó nữa; (ii) việc lưu giữ không còn cần thiết cho bất kỳ mục đích hợp pháp hay mục đích kinh doanh nào và (iii) không còn các lợi ích hợp pháp nào khác để tiếp tục lưu giữ các dữ liệu cá nhân này. Nếu người dùng ngưng sử dụng dịch vụ của Shopee, hoặc quyền của người dùng được sử dụng ",
+          "metadata": {
+            "doc_id": "77245",
+            "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77245",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "platform-regulation",
+            "language": "vi",
+            "chunk_index": 69
+          },
+          "score": 0.36894356763326824
+        },
+        {
+          "id": "77251#9",
+          "content": "g hợp tài khoản Shopee của Người Mua không liên kết thành công với các phương thức nhận hoàn tiền theo quy định tại Điều 3.3 này. \n\n3.4. Tất cả các yêu cầu trả hàng hoàn tiền phải được thực hiện trên tài khoản Shopee của chính Người Mua đã đặt đơn hàng.\n\n3.5. Shopee luôn xem xét cẩn thận các yêu cầu trả hàng/hoàn tiền của Người Mua và có quyền đưa ra quyết định cuối cùng đối với yêu cầu đó dựa trên các quy định nêu trên và theo Điều Khoản Dịch Vụ của Shopee.\n\n4. QUY ĐỊNH BỔ SUNG ĐỐI VỚI CÁC TRƯỜ",
+          "metadata": {
+            "doc_id": "77251",
+            "title": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77251",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "both",
+            "category": "returns-policy",
+            "language": "vi",
+            "chunk_index": 9
+          },
+          "score": 0.327099932687425
+        },
+        {
+          "id": "77246#15",
+          "content": "\n- Không đăng bán mỹ phẩm đã qua sử dụng;\n\n- Không đăng bán các sản phẩm không rõ nguồn gốc xuất xứ (ví dụ như sản phẩm handmade, kem trộn, v.v…);\n\n- Đối với các sản phẩm thương hiệu trong nước: phải đăng kèm hình scan (bản gốc hoặc sao y công chứng) các loại Giấy Chứng Nhận sau:\n\n+ Phiếu công bố mỹ phẩm do Bộ/ Sở Y tế cấp, trong đó thể hiện thông tin chủ thể chịu trách nhiệm đưa sản phẩm ra thị trường;\n\n+ Chứng nhận đại lý/Hợp đồng mua bán/hóa đơn nhập hàng từ công ty sản xuất (nếu Người Bán là",
+          "metadata": {
+            "doc_id": "77246",
+            "title": "QUY ĐỊNH VỀ ĐĂNG BÁN SẢN PHẨM TRÊN SHOPEE | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/77246",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "seller",
+            "category": "seller-policy",
+            "language": "vi",
+            "chunk_index": 15
+          },
+          "score": 0.2860964225344164
+        }
+      ],
+      "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 77245):\ncông ty sẽ hủy hoặc xóa thông tin nhận dạng ra khỏi dữ liệu cá nhân của người dùng khi Shopee có lý do hợp lý để xác định rằng (i) việc lưu giữ dữ liệu cá nhân đó không còn phục vụ mục đích thu thập dữ liệu cá nhân đó nữa; (ii) việc lưu giữ không còn cần thiết cho bất kỳ mục đích hợp pháp hay mục đích kinh doanh nào và (iii) không còn các lợi ích hợp pháp nào khác để tiếp tục lưu giữ các dữ liệu cá nhân này. Nếu người dùng ngưng sử dụng dịch vụ của Shopee, hoặc quyền của người dùng được sử dụng\n\n[2] (Nguồn: 77251):\ng hợp tài khoản Shopee của Người Mua không liên kết thành công với các phương thức nhận hoàn tiền theo quy định tại Điều 3.3 này. \n\n3.4. Tất cả các yêu cầu trả hàng hoàn tiền phải được thực hiện trên tài khoản Shopee của chính Người Mua đã đặt đơn hàng.\n\n3.5. Shopee luôn xem xét cẩn thận các yêu cầu trả hàng/hoàn tiền của Người Mua và có quyền đưa ra quyết định cuối cùng đối với yêu cầu đó dựa trên các quy định nêu trên và theo Điều Khoản Dịch Vụ của Shopee.\n\n4. QUY ĐỊNH BỔ SUNG ĐỐI VỚI CÁC TRƯỜ\n\n[3] (Nguồn: 77246):\n- Không đăng bán mỹ phẩm đã qua sử dụng;\n\n- Không đăng bán các sản phẩm không rõ nguồn gốc xuất xứ (ví dụ như sản phẩm handmade, kem trộn, v.v…);\n\n- Đối với các sản phẩm thương hiệu trong nước: phải đăng kèm hình scan (bản gốc hoặc sao y công chứng) các loại Giấy Chứng Nhận sau:\n\n+ Phiếu công bố mỹ phẩm do Bộ/ Sở Y tế cấp, trong đó thể hiện thông tin chủ thể chịu trách nhiệm đưa sản phẩm ra thị trường;\n\n+ Chứng nhận đại lý/Hợp đồng mua bán/hóa đơn nhập hàng từ công ty sản xuất (nếu Người Bán là",
+      "evaluation": {
+        "gold_document_rank": null,
+        "document_only_score": 0,
+        "evidence_groups": [
+          [
+            "3 - 5 ngày làm việc"
+          ],
+          [
+            "1 - 14 ngày làm việc"
+          ]
+        ],
+        "evidence_found": [
+          false,
+          false
+        ],
+        "context_contains_answer_markers": false,
+        "content_score": 0,
+        "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+      },
+      "rubric_score": null
+    },
+    {
+      "id": 5,
+      "question": "Thời gian xử lý yêu cầu Trả hàng / Hoàn tiền là bao lâu?",
+      "gold_answer": "Đối với Người mua, yêu cầu Trả hàng/Hoàn tiền thường được Shopee xử lý trong khoảng 3 - 5 ngày làm việc; thời gian nhận tiền hoàn từ 1 - 14 ngày làm việc.",
+      "gold_source": "`79233.md` (Mục 2)",
+      "metadata_filter": {
+        "audience": "buyer"
+      },
+      "results": [
+        {
+          "id": "189477#3",
+          "content": "ng hàng đến bưu cục bất kỳ để gửi trả theo địa chỉ Shopee cung cấp\n\nBước 34: Đăng tải bằng chứng trả hàng tại Chi tiết Trả hàng/hoàn tiền của đơn hàng đang hoàn trả\n\n \n\nXem chi tiết Cách đóng gói đơn hàng hoàn trả và cách Tra cứu mã vận đơn trả hàng tại đây.\n\n1.2. Lưu ý khi chọn Hình thức Đơn vị vận chuyển đến lấy hàng: \n\nĐơn vị vận chuyển sẽ chỉ hỗ trợ tối đa 3 lần lấy hàng khác nhau trong vòng 1-3 ngày kể từ ngày lấy hàng bạn đã chọn. Do đó, bạn vui lòng sắp xếp thời gian gửi hàng phù hợp đ",
+          "metadata": {
+            "doc_id": "189477",
+            "title": "[Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/189477",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "buyer",
+            "category": "shipping-fee",
+            "language": "vi",
+            "chunk_index": 3
+          },
+          "score": 0.24655608234485782
+        },
+        {
+          "id": "189477#5",
+          "content": "ả trong thời gian quy định.\n\nNgoài ra, bạn cũng có thể chủ động thay đổi Thông tin lấy hàng bằng cách vào yêu cầu Trả hàng/Hoàn Tiền -> chọn “Thay đổi phương thức trả hàng” để cập nhật thông tin trả hàng như ngày lấy hàng dự kiến hoặc chọn “Trả hàng tại bưu cục” \n\n1.3. Hướng dẫn Người mua trả hàng tại bưu cục:\n\nSau khi bạn đã thực hiện gửi yêu cầu hoàn tiền và chọn hình thức trả hàng là gửi trả tại bưu cục trên ứng dụng Shopee. Bạn vui lòng tiến hành các bước tiếp the",
+          "metadata": {
+            "doc_id": "189477",
+            "title": "[Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/189477",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "buyer",
+            "category": "shipping-fee",
+            "language": "vi",
+            "chunk_index": 5
+          },
+          "score": 0.22815838681733722
+        },
+        {
+          "id": "79467#2",
+          "content": "hàng nhưng gặp vấn đề, Shopee khuyến khích bạn chuẩn bị bằng chứng là video mở kiện hàng. Video này sẽ là bằng chứng mạnh nhất để giải quyết khiếu nại của bạn.\n\nVideo cần đảm bảo các yếu tố sau:\n\nQuay xuyên suốt, liên tục, không bị cắt ghép.\n\nGóc quay rõ ràng, không bị khuất.\n\nChất lượng video tốt, không bị mờ nhòe.\n\nThể hiện rõ các thông tin sau:\n\nTình trạng kiện hàng: Quay 6 mặt của kiện hàng để chứng minh tình trạng khi bạn nhận được.\n\nQuá trình mở kiện: Thấy rõ mã vận đơn trên kiện hàng, khớ",
+          "metadata": {
+            "doc_id": "79467",
+            "title": "[Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp",
+            "source_url": "https://help.shopee.vn/portal/4/article/79467",
+            "retrieved_at": "2026-09-20",
+            "document_version": "not-stated",
+            "audience": "buyer",
+            "category": "returns-process",
+            "language": "vi",
+            "chunk_index": 2
+          },
+          "score": 0.16598602311418986
+        }
+      ],
+      "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 189477):\nng hàng đến bưu cục bất kỳ để gửi trả theo địa chỉ Shopee cung cấp\n\nBước 34: Đăng tải bằng chứng trả hàng tại Chi tiết Trả hàng/hoàn tiền của đơn hàng đang hoàn trả\n\n \n\nXem chi tiết Cách đóng gói đơn hàng hoàn trả và cách Tra cứu mã vận đơn trả hàng tại đây.\n\n1.2. Lưu ý khi chọn Hình thức Đơn vị vận chuyển đến lấy hàng: \n\nĐơn vị vận chuyển sẽ chỉ hỗ trợ tối đa 3 lần lấy hàng khác nhau trong vòng 1-3 ngày kể từ ngày lấy hàng bạn đã chọn. Do đó, bạn vui lòng sắp xếp thời gian gửi hàng phù hợp đ\n\n[2] (Nguồn: 189477):\nả trong thời gian quy định.\n\nNgoài ra, bạn cũng có thể chủ động thay đổi Thông tin lấy hàng bằng cách vào yêu cầu Trả hàng/Hoàn Tiền -> chọn “Thay đổi phương thức trả hàng” để cập nhật thông tin trả hàng như ngày lấy hàng dự kiến hoặc chọn “Trả hàng tại bưu cục” \n\n1.3. Hướng dẫn Người mua trả hàng tại bưu cục:\n\nSau khi bạn đã thực hiện gửi yêu cầu hoàn tiền và chọn hình thức trả hàng là gửi trả tại bưu cục trên ứng dụng Shopee. Bạn vui lòng tiến hành các bước tiếp the\n\n[3] (Nguồn: 79467):\nhàng nhưng gặp vấn đề, Shopee khuyến khích bạn chuẩn bị bằng chứng là video mở kiện hàng. Video này sẽ là bằng chứng mạnh nhất để giải quyết khiếu nại của bạn.\n\nVideo cần đảm bảo các yếu tố sau:\n\nQuay xuyên suốt, liên tục, không bị cắt ghép.\n\nGóc quay rõ ràng, không bị khuất.\n\nChất lượng video tốt, không bị mờ nhòe.\n\nThể hiện rõ các thông tin sau:\n\nTình trạng kiện hàng: Quay 6 mặt của kiện hàng để chứng minh tình trạng khi bạn nhận được.\n\nQuá trình mở kiện: Thấy rõ mã vận đơn trên kiện hàng, khớ",
+      "evaluation": {
+        "gold_document_rank": null,
+        "document_only_score": 0,
+        "evidence_groups": [
+          [
+            "3 - 5 ngày làm việc"
+          ],
+          [
+            "1 - 14 ngày làm việc"
+          ]
+        ],
+        "evidence_found": [
+          false,
+          false
+        ],
+        "context_contains_answer_markers": false,
+        "content_score": 0,
+        "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+      },
+      "rubric_score": null
+    }
+  ],
+  "ab_comparison": [
+    {
+      "strategy": {
+        "name": "FixedSizeChunker",
+        "chunk_size": 500,
+        "overlap": 50
+      },
+      "chunk_count": 337,
+      "runs": [
+        {
+          "id": 5,
+          "question": "Thời gian xử lý yêu cầu Trả hàng / Hoàn tiền là bao lâu?",
+          "gold_answer": "Đối với Người mua, yêu cầu Trả hàng/Hoàn tiền thường được Shopee xử lý trong khoảng 3 - 5 ngày làm việc; thời gian nhận tiền hoàn từ 1 - 14 ngày làm việc.",
+          "gold_source": "`79233.md` (Mục 2)",
+          "metadata_filter": null,
+          "results": [
+            {
+              "id": "77245#69",
+              "content": "công ty sẽ hủy hoặc xóa thông tin nhận dạng ra khỏi dữ liệu cá nhân của người dùng khi Shopee có lý do hợp lý để xác định rằng (i) việc lưu giữ dữ liệu cá nhân đó không còn phục vụ mục đích thu thập dữ liệu cá nhân đó nữa; (ii) việc lưu giữ không còn cần thiết cho bất kỳ mục đích hợp pháp hay mục đích kinh doanh nào và (iii) không còn các lợi ích hợp pháp nào khác để tiếp tục lưu giữ các dữ liệu cá nhân này. Nếu người dùng ngưng sử dụng dịch vụ của Shopee, hoặc quyền của người dùng được sử dụng ",
+              "metadata": {
+                "doc_id": "77245",
+                "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/77245",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "both",
+                "category": "platform-regulation",
+                "language": "vi",
+                "chunk_index": 69
+              },
+              "score": 0.36894356763326824
+            },
+            {
+              "id": "77251#9",
+              "content": "g hợp tài khoản Shopee của Người Mua không liên kết thành công với các phương thức nhận hoàn tiền theo quy định tại Điều 3.3 này. \n\n3.4. Tất cả các yêu cầu trả hàng hoàn tiền phải được thực hiện trên tài khoản Shopee của chính Người Mua đã đặt đơn hàng.\n\n3.5. Shopee luôn xem xét cẩn thận các yêu cầu trả hàng/hoàn tiền của Người Mua và có quyền đưa ra quyết định cuối cùng đối với yêu cầu đó dựa trên các quy định nêu trên và theo Điều Khoản Dịch Vụ của Shopee.\n\n4. QUY ĐỊNH BỔ SUNG ĐỐI VỚI CÁC TRƯỜ",
+              "metadata": {
+                "doc_id": "77251",
+                "title": "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/77251",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "both",
+                "category": "returns-policy",
+                "language": "vi",
+                "chunk_index": 9
+              },
+              "score": 0.327099932687425
+            },
+            {
+              "id": "77246#15",
+              "content": "\n- Không đăng bán mỹ phẩm đã qua sử dụng;\n\n- Không đăng bán các sản phẩm không rõ nguồn gốc xuất xứ (ví dụ như sản phẩm handmade, kem trộn, v.v…);\n\n- Đối với các sản phẩm thương hiệu trong nước: phải đăng kèm hình scan (bản gốc hoặc sao y công chứng) các loại Giấy Chứng Nhận sau:\n\n+ Phiếu công bố mỹ phẩm do Bộ/ Sở Y tế cấp, trong đó thể hiện thông tin chủ thể chịu trách nhiệm đưa sản phẩm ra thị trường;\n\n+ Chứng nhận đại lý/Hợp đồng mua bán/hóa đơn nhập hàng từ công ty sản xuất (nếu Người Bán là",
+              "metadata": {
+                "doc_id": "77246",
+                "title": "QUY ĐỊNH VỀ ĐĂNG BÁN SẢN PHẨM TRÊN SHOPEE | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/77246",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "seller",
+                "category": "seller-policy",
+                "language": "vi",
+                "chunk_index": 15
+              },
+              "score": 0.2860964225344164
+            }
+          ],
+          "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 77245):\ncông ty sẽ hủy hoặc xóa thông tin nhận dạng ra khỏi dữ liệu cá nhân của người dùng khi Shopee có lý do hợp lý để xác định rằng (i) việc lưu giữ dữ liệu cá nhân đó không còn phục vụ mục đích thu thập dữ liệu cá nhân đó nữa; (ii) việc lưu giữ không còn cần thiết cho bất kỳ mục đích hợp pháp hay mục đích kinh doanh nào và (iii) không còn các lợi ích hợp pháp nào khác để tiếp tục lưu giữ các dữ liệu cá nhân này. Nếu người dùng ngưng sử dụng dịch vụ của Shopee, hoặc quyền của người dùng được sử dụng\n\n[2] (Nguồn: 77251):\ng hợp tài khoản Shopee của Người Mua không liên kết thành công với các phương thức nhận hoàn tiền theo quy định tại Điều 3.3 này. \n\n3.4. Tất cả các yêu cầu trả hàng hoàn tiền phải được thực hiện trên tài khoản Shopee của chính Người Mua đã đặt đơn hàng.\n\n3.5. Shopee luôn xem xét cẩn thận các yêu cầu trả hàng/hoàn tiền của Người Mua và có quyền đưa ra quyết định cuối cùng đối với yêu cầu đó dựa trên các quy định nêu trên và theo Điều Khoản Dịch Vụ của Shopee.\n\n4. QUY ĐỊNH BỔ SUNG ĐỐI VỚI CÁC TRƯỜ\n\n[3] (Nguồn: 77246):\n- Không đăng bán mỹ phẩm đã qua sử dụng;\n\n- Không đăng bán các sản phẩm không rõ nguồn gốc xuất xứ (ví dụ như sản phẩm handmade, kem trộn, v.v…);\n\n- Đối với các sản phẩm thương hiệu trong nước: phải đăng kèm hình scan (bản gốc hoặc sao y công chứng) các loại Giấy Chứng Nhận sau:\n\n+ Phiếu công bố mỹ phẩm do Bộ/ Sở Y tế cấp, trong đó thể hiện thông tin chủ thể chịu trách nhiệm đưa sản phẩm ra thị trường;\n\n+ Chứng nhận đại lý/Hợp đồng mua bán/hóa đơn nhập hàng từ công ty sản xuất (nếu Người Bán là",
+          "evaluation": {
+            "gold_document_rank": null,
+            "document_only_score": 0,
+            "evidence_groups": [
+              [
+                "3 - 5 ngày làm việc"
+              ],
+              [
+                "1 - 14 ngày làm việc"
+              ]
+            ],
+            "evidence_found": [
+              false,
+              false
+            ],
+            "context_contains_answer_markers": false,
+            "content_score": 0,
+            "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+          },
+          "rubric_score": null
+        },
+        {
+          "id": 5,
+          "question": "Thời gian xử lý yêu cầu Trả hàng / Hoàn tiền là bao lâu?",
+          "gold_answer": "Đối với Người mua, yêu cầu Trả hàng/Hoàn tiền thường được Shopee xử lý trong khoảng 3 - 5 ngày làm việc; thời gian nhận tiền hoàn từ 1 - 14 ngày làm việc.",
+          "gold_source": "`79233.md` (Mục 2)",
+          "metadata_filter": {
+            "audience": "buyer"
+          },
+          "results": [
+            {
+              "id": "189477#3",
+              "content": "ng hàng đến bưu cục bất kỳ để gửi trả theo địa chỉ Shopee cung cấp\n\nBước 34: Đăng tải bằng chứng trả hàng tại Chi tiết Trả hàng/hoàn tiền của đơn hàng đang hoàn trả\n\n \n\nXem chi tiết Cách đóng gói đơn hàng hoàn trả và cách Tra cứu mã vận đơn trả hàng tại đây.\n\n1.2. Lưu ý khi chọn Hình thức Đơn vị vận chuyển đến lấy hàng: \n\nĐơn vị vận chuyển sẽ chỉ hỗ trợ tối đa 3 lần lấy hàng khác nhau trong vòng 1-3 ngày kể từ ngày lấy hàng bạn đã chọn. Do đó, bạn vui lòng sắp xếp thời gian gửi hàng phù hợp đ",
+              "metadata": {
+                "doc_id": "189477",
+                "title": "[Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/189477",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "buyer",
+                "category": "shipping-fee",
+                "language": "vi",
+                "chunk_index": 3
+              },
+              "score": 0.24655608234485782
+            },
+            {
+              "id": "189477#5",
+              "content": "ả trong thời gian quy định.\n\nNgoài ra, bạn cũng có thể chủ động thay đổi Thông tin lấy hàng bằng cách vào yêu cầu Trả hàng/Hoàn Tiền -> chọn “Thay đổi phương thức trả hàng” để cập nhật thông tin trả hàng như ngày lấy hàng dự kiến hoặc chọn “Trả hàng tại bưu cục” \n\n1.3. Hướng dẫn Người mua trả hàng tại bưu cục:\n\nSau khi bạn đã thực hiện gửi yêu cầu hoàn tiền và chọn hình thức trả hàng là gửi trả tại bưu cục trên ứng dụng Shopee. Bạn vui lòng tiến hành các bước tiếp the",
+              "metadata": {
+                "doc_id": "189477",
+                "title": "[Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/189477",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "buyer",
+                "category": "shipping-fee",
+                "language": "vi",
+                "chunk_index": 5
+              },
+              "score": 0.22815838681733722
+            },
+            {
+              "id": "79467#2",
+              "content": "hàng nhưng gặp vấn đề, Shopee khuyến khích bạn chuẩn bị bằng chứng là video mở kiện hàng. Video này sẽ là bằng chứng mạnh nhất để giải quyết khiếu nại của bạn.\n\nVideo cần đảm bảo các yếu tố sau:\n\nQuay xuyên suốt, liên tục, không bị cắt ghép.\n\nGóc quay rõ ràng, không bị khuất.\n\nChất lượng video tốt, không bị mờ nhòe.\n\nThể hiện rõ các thông tin sau:\n\nTình trạng kiện hàng: Quay 6 mặt của kiện hàng để chứng minh tình trạng khi bạn nhận được.\n\nQuá trình mở kiện: Thấy rõ mã vận đơn trên kiện hàng, khớ",
+              "metadata": {
+                "doc_id": "79467",
+                "title": "[Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/79467",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "buyer",
+                "category": "returns-process",
+                "language": "vi",
+                "chunk_index": 2
+              },
+              "score": 0.16598602311418986
+            }
+          ],
+          "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 189477):\nng hàng đến bưu cục bất kỳ để gửi trả theo địa chỉ Shopee cung cấp\n\nBước 34: Đăng tải bằng chứng trả hàng tại Chi tiết Trả hàng/hoàn tiền của đơn hàng đang hoàn trả\n\n \n\nXem chi tiết Cách đóng gói đơn hàng hoàn trả và cách Tra cứu mã vận đơn trả hàng tại đây.\n\n1.2. Lưu ý khi chọn Hình thức Đơn vị vận chuyển đến lấy hàng: \n\nĐơn vị vận chuyển sẽ chỉ hỗ trợ tối đa 3 lần lấy hàng khác nhau trong vòng 1-3 ngày kể từ ngày lấy hàng bạn đã chọn. Do đó, bạn vui lòng sắp xếp thời gian gửi hàng phù hợp đ\n\n[2] (Nguồn: 189477):\nả trong thời gian quy định.\n\nNgoài ra, bạn cũng có thể chủ động thay đổi Thông tin lấy hàng bằng cách vào yêu cầu Trả hàng/Hoàn Tiền -> chọn “Thay đổi phương thức trả hàng” để cập nhật thông tin trả hàng như ngày lấy hàng dự kiến hoặc chọn “Trả hàng tại bưu cục” \n\n1.3. Hướng dẫn Người mua trả hàng tại bưu cục:\n\nSau khi bạn đã thực hiện gửi yêu cầu hoàn tiền và chọn hình thức trả hàng là gửi trả tại bưu cục trên ứng dụng Shopee. Bạn vui lòng tiến hành các bước tiếp the\n\n[3] (Nguồn: 79467):\nhàng nhưng gặp vấn đề, Shopee khuyến khích bạn chuẩn bị bằng chứng là video mở kiện hàng. Video này sẽ là bằng chứng mạnh nhất để giải quyết khiếu nại của bạn.\n\nVideo cần đảm bảo các yếu tố sau:\n\nQuay xuyên suốt, liên tục, không bị cắt ghép.\n\nGóc quay rõ ràng, không bị khuất.\n\nChất lượng video tốt, không bị mờ nhòe.\n\nThể hiện rõ các thông tin sau:\n\nTình trạng kiện hàng: Quay 6 mặt của kiện hàng để chứng minh tình trạng khi bạn nhận được.\n\nQuá trình mở kiện: Thấy rõ mã vận đơn trên kiện hàng, khớ",
+          "evaluation": {
+            "gold_document_rank": null,
+            "document_only_score": 0,
+            "evidence_groups": [
+              [
+                "3 - 5 ngày làm việc"
+              ],
+              [
+                "1 - 14 ngày làm việc"
+              ]
+            ],
+            "evidence_found": [
+              false,
+              false
+            ],
+            "context_contains_answer_markers": false,
+            "content_score": 0,
+            "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+          },
+          "rubric_score": null
+        }
+      ],
+      "same_top3": false
+    },
+    {
+      "strategy": {
+        "name": "SentenceChunker",
+        "max_sentences_per_chunk": 3
+      },
+      "chunk_count": 417,
+      "runs": [
+        {
+          "id": 5,
+          "question": "Thời gian xử lý yêu cầu Trả hàng / Hoàn tiền là bao lâu?",
+          "gold_answer": "Đối với Người mua, yêu cầu Trả hàng/Hoàn tiền thường được Shopee xử lý trong khoảng 3 - 5 ngày làm việc; thời gian nhận tiền hoàn từ 1 - 14 ngày làm việc.",
+          "gold_source": "`79233.md` (Mục 2)",
+          "metadata_filter": null,
+          "results": [
+            {
+              "id": "77245#151",
+              "content": "Sàn giao dịch TMĐT Shopee giữ bản quyền sử dụng dịch vụ và các nội dung trên Sàn giao dịch TMĐT Shopee theo các quy định pháp luật về bảo hộ sở hữu trí tuệ tại Việt Nam. Tất cả các biểu tượng, nội dung theo các ngôn ngữ khác nhau đều thuộc quyền sở hữu của Sàn giao dịch TMĐT Shopee. Nghiêm cấm mọi hành vi sao chép, sử dụng và phổ biến bất hợp pháp các quyền sở hữu trên.",
+              "metadata": {
+                "doc_id": "77245",
+                "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/77245",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "both",
+                "category": "platform-regulation",
+                "language": "vi",
+                "chunk_index": 151
+              },
+              "score": 0.32490439039665236
+            },
+            {
+              "id": "77245#68",
+              "content": "Quản lý thông tin xấu\n\n🗹 Cơ chế kiểm soát tự động               🗹 Cơ chế kiểm soát riêng\n\n🗹 Có quy định về đăng thông tin        🗹 Cơ chế giám sát khác\n\n1. Quy định thành viên\n\n1.1 Kiểm soát thành viên:\n\na. Thành viên bao gồm Người Mua, Người Bán và các đối tượng khác có đăng ký tài khoản Shopee trong từng thời kỳ.",
+              "metadata": {
+                "doc_id": "77245",
+                "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/77245",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "both",
+                "category": "platform-regulation",
+                "language": "vi",
+                "chunk_index": 68
+              },
+              "score": 0.3152296274366209
+            },
+            {
+              "id": "77245#29",
+              "content": "Bước 2: Bộ phận giải quyết khiếu nại của Shopee sẽ tiếp nhận các yêu cầu của người khiếu nại/các bên tranh chấp. Shopee sẽ có biện pháp cụ thể hỗ trợ người khiếu nại/các bên tranh chấp để giải quyết tùy theo tính chất và mức độ của vụ việc. Bước 3: Khiếu nại Trả Hàng/Hoàn Tiền được xử lý theo Chính Sách Trả Hàng Và Hoàn Tiền của Shopee.",
+              "metadata": {
+                "doc_id": "77245",
+                "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/77245",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "both",
+                "category": "platform-regulation",
+                "language": "vi",
+                "chunk_index": 29
+              },
+              "score": 0.2902519865637856
+            }
+          ],
+          "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 77245):\nSàn giao dịch TMĐT Shopee giữ bản quyền sử dụng dịch vụ và các nội dung trên Sàn giao dịch TMĐT Shopee theo các quy định pháp luật về bảo hộ sở hữu trí tuệ tại Việt Nam. Tất cả các biểu tượng, nội dung theo các ngôn ngữ khác nhau đều thuộc quyền sở hữu của Sàn giao dịch TMĐT Shopee. Nghiêm cấm mọi hành vi sao chép, sử dụng và phổ biến bất hợp pháp các quyền sở hữu trên.\n\n[2] (Nguồn: 77245):\nQuản lý thông tin xấu\n\n🗹 Cơ chế kiểm soát tự động               🗹 Cơ chế kiểm soát riêng\n\n🗹 Có quy định về đăng thông tin        🗹 Cơ chế giám sát khác\n\n1. Quy định thành viên\n\n1.1 Kiểm soát thành viên:\n\na. Thành viên bao gồm Người Mua, Người Bán và các đối tượng khác có đăng ký tài khoản Shopee trong từng thời kỳ.\n\n[3] (Nguồn: 77245):\nBước 2: Bộ phận giải quyết khiếu nại của Shopee sẽ tiếp nhận các yêu cầu của người khiếu nại/các bên tranh chấp. Shopee sẽ có biện pháp cụ thể hỗ trợ người khiếu nại/các bên tranh chấp để giải quyết tùy theo tính chất và mức độ của vụ việc. Bước 3: Khiếu nại Trả Hàng/Hoàn Tiền được xử lý theo Chính Sách Trả Hàng Và Hoàn Tiền của Shopee.",
+          "evaluation": {
+            "gold_document_rank": null,
+            "document_only_score": 0,
+            "evidence_groups": [
+              [
+                "3 - 5 ngày làm việc"
+              ],
+              [
+                "1 - 14 ngày làm việc"
+              ]
+            ],
+            "evidence_found": [
+              false,
+              false
+            ],
+            "context_contains_answer_markers": false,
+            "content_score": 0,
+            "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+          },
+          "rubric_score": null
+        },
+        {
+          "id": 5,
+          "question": "Thời gian xử lý yêu cầu Trả hàng / Hoàn tiền là bao lâu?",
+          "gold_answer": "Đối với Người mua, yêu cầu Trả hàng/Hoàn tiền thường được Shopee xử lý trong khoảng 3 - 5 ngày làm việc; thời gian nhận tiền hoàn từ 1 - 14 ngày làm việc.",
+          "gold_source": "`79233.md` (Mục 2)",
+          "metadata_filter": {
+            "audience": "buyer"
+          },
+          "results": [
+            {
+              "id": "189477#2",
+              "content": "1.2. Lưu ý khi chọn Hình thức Đơn vị vận chuyển đến lấy hàng: \n\nĐơn vị vận chuyển sẽ chỉ hỗ trợ tối đa 3 lần lấy hàng khác nhau trong vòng 1-3 ngày kể từ ngày lấy hàng bạn đã chọn. Do đó, bạn vui lòng sắp xếp thời gian gửi hàng phù hợp để không ảnh hưởng đến quyền lợi trả hàng.",
+              "metadata": {
+                "doc_id": "189477",
+                "title": "[Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/189477",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "buyer",
+                "category": "shipping-fee",
+                "language": "vi",
+                "chunk_index": 2
+              },
+              "score": 0.22888489287834377
+            },
+            {
+              "id": "79467#0",
+              "content": "# [Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp\n\n[Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp\n\nXin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền\n\nKhi bạn cần gửi yêu cầu Trả hàng/Hoàn tiền trên Shopee, việc cung cấp đầy đủ và chính xác bằng chứng là rất quan trọng để đảm bảo yêu cầu của bạn được xử lý nhanh chóng. Tùy thuộc vào từng trường hợp, loại bằng chứng bạn cần chuẩn bị sẽ khác nhau.",
+              "metadata": {
+                "doc_id": "79467",
+                "title": "[Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/79467",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "buyer",
+                "category": "returns-process",
+                "language": "vi",
+                "chunk_index": 0
+              },
+              "score": 0.21412544386187438
+            },
+            {
+              "id": "189477#8",
+              "content": "Ví dụ: Shopee Xu nhận được vào ngày 17/01/2026 sẽ hết hạn vào ngày 31/03/2026. Cách kiểm tra thông tin Shopee Xu: vào mục Tôi > chọn Shopee Xu tại mục Tiện ích của tôi trên ứng dụng Shopee\n\n \n\nBạn có hài lòng với bài viết này? Hài lòng\n\nKhông hài lòng",
+              "metadata": {
+                "doc_id": "189477",
+                "title": "[Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/189477",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "buyer",
+                "category": "shipping-fee",
+                "language": "vi",
+                "chunk_index": 8
+              },
+              "score": 0.1799338401845741
+            }
+          ],
+          "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 189477):\n1.2. Lưu ý khi chọn Hình thức Đơn vị vận chuyển đến lấy hàng: \n\nĐơn vị vận chuyển sẽ chỉ hỗ trợ tối đa 3 lần lấy hàng khác nhau trong vòng 1-3 ngày kể từ ngày lấy hàng bạn đã chọn. Do đó, bạn vui lòng sắp xếp thời gian gửi hàng phù hợp để không ảnh hưởng đến quyền lợi trả hàng.\n\n[2] (Nguồn: 79467):\n# [Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp\n\n[Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp\n\nXin chào, Shopee có thể giúp gì cho bạn? [Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền\n\nKhi bạn cần gửi yêu cầu Trả hàng/Hoàn tiền trên Shopee, việc cung cấp đầy đủ và chính xác bằng chứng là rất quan trọng để đảm bảo yêu cầu của bạn được xử lý nhanh chóng. Tùy thuộc vào từng trường hợp, loại bằng chứng bạn cần chuẩn bị sẽ khác nhau.\n\n[3] (Nguồn: 189477):\nVí dụ: Shopee Xu nhận được vào ngày 17/01/2026 sẽ hết hạn vào ngày 31/03/2026. Cách kiểm tra thông tin Shopee Xu: vào mục Tôi > chọn Shopee Xu tại mục Tiện ích của tôi trên ứng dụng Shopee\n\n \n\nBạn có hài lòng với bài viết này? Hài lòng\n\nKhông hài lòng",
+          "evaluation": {
+            "gold_document_rank": null,
+            "document_only_score": 0,
+            "evidence_groups": [
+              [
+                "3 - 5 ngày làm việc"
+              ],
+              [
+                "1 - 14 ngày làm việc"
+              ]
+            ],
+            "evidence_found": [
+              false,
+              false
+            ],
+            "context_contains_answer_markers": false,
+            "content_score": 0,
+            "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+          },
+          "rubric_score": null
+        }
+      ],
+      "same_top3": false
+    },
+    {
+      "strategy": {
+        "name": "RecursiveChunker",
+        "separators": [
+          "\n\n",
+          "\n",
+          ". ",
+          " ",
+          ""
+        ],
+        "chunk_size": 500
+      },
+      "chunk_count": 381,
+      "runs": [
+        {
+          "id": 5,
+          "question": "Thời gian xử lý yêu cầu Trả hàng / Hoàn tiền là bao lâu?",
+          "gold_answer": "Đối với Người mua, yêu cầu Trả hàng/Hoàn tiền thường được Shopee xử lý trong khoảng 3 - 5 ngày làm việc; thời gian nhận tiền hoàn từ 1 - 14 ngày làm việc.",
+          "gold_source": "`79233.md` (Mục 2)",
+          "metadata_filter": null,
+          "results": [
+            {
+              "id": "77245#198",
+              "content": "                                                                                                           [đã ký và đóng dấu]\n\n \n\n                                                                                                            TRAN ANH TUAN\n\n \n\nBản Cập Nhật ngày 03/01/2025.\n\nPhiên bản này có hiệu lực sau 07 (bảy) ngày kể từ ngày đăng tải lên Sàn Thương Mại Điện Tử Shopee. Để tham khảo phiên bản trước đây của Quy chế hoạt động, vui lòng bấm vào ĐÂY.",
+              "metadata": {
+                "doc_id": "77245",
+                "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/77245",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "both",
+                "category": "platform-regulation",
+                "language": "vi",
+                "chunk_index": 198
+              },
+              "score": 0.37880383143946106
+            },
+            {
+              "id": "77245#162",
+              "content": "i. Cung cấp thông tin về đối tượng có dấu hiệu, hành vi vi phạm pháp luật trên sàn giao dịch thương mại điện tử cho cơ quan quản lý nhà nước có thẩm quyền khi phát hiện hoặc nhận được các thông tin nêu trên;\n\nii. Thường xuyên cập nhật từ khóa theo khuyến cáo từ cơ quan quản lý nhà nước có thẩm quyền và lọc thông tin theo từ khóa trước khi thông tin về hàng hóa, dịch vụ hiển thị trên website;",
+              "metadata": {
+                "doc_id": "77245",
+                "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/77245",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "both",
+                "category": "platform-regulation",
+                "language": "vi",
+                "chunk_index": 162
+              },
+              "score": 0.32447174897605596
+            },
+            {
+              "id": "77245#83",
+              "content": "4. Địa chỉ của Bên kiểm soát và xử lý dữ liệu cá nhân\n\nCÔNG TY TNHH SHOPEE\n\nĐịa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội\n\nLiên hệ: https://help.shopee.vn/vn/s/contactusform \n\n5. Phương tiện và công cụ để người dùng tiếp cận và chỉnh sửa dữ liệu cá nhân của mình.",
+              "metadata": {
+                "doc_id": "77245",
+                "title": "QUY CHẾ HOẠT ĐỘNG SÀN THƯƠNG MẠI ĐIỆN TỬ SHOPEE.VN | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/77245",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "both",
+                "category": "platform-regulation",
+                "language": "vi",
+                "chunk_index": 83
+              },
+              "score": 0.3198377463235915
+            }
+          ],
+          "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 77245):\n[đã ký và đóng dấu]\n\n \n\n                                                                                                            TRAN ANH TUAN\n\n \n\nBản Cập Nhật ngày 03/01/2025.\n\nPhiên bản này có hiệu lực sau 07 (bảy) ngày kể từ ngày đăng tải lên Sàn Thương Mại Điện Tử Shopee. Để tham khảo phiên bản trước đây của Quy chế hoạt động, vui lòng bấm vào ĐÂY.\n\n[2] (Nguồn: 77245):\ni. Cung cấp thông tin về đối tượng có dấu hiệu, hành vi vi phạm pháp luật trên sàn giao dịch thương mại điện tử cho cơ quan quản lý nhà nước có thẩm quyền khi phát hiện hoặc nhận được các thông tin nêu trên;\n\nii. Thường xuyên cập nhật từ khóa theo khuyến cáo từ cơ quan quản lý nhà nước có thẩm quyền và lọc thông tin theo từ khóa trước khi thông tin về hàng hóa, dịch vụ hiển thị trên website;\n\n[3] (Nguồn: 77245):\n4. Địa chỉ của Bên kiểm soát và xử lý dữ liệu cá nhân\n\nCÔNG TY TNHH SHOPEE\n\nĐịa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội\n\nLiên hệ: https://help.shopee.vn/vn/s/contactusform \n\n5. Phương tiện và công cụ để người dùng tiếp cận và chỉnh sửa dữ liệu cá nhân của mình.",
+          "evaluation": {
+            "gold_document_rank": null,
+            "document_only_score": 0,
+            "evidence_groups": [
+              [
+                "3 - 5 ngày làm việc"
+              ],
+              [
+                "1 - 14 ngày làm việc"
+              ]
+            ],
+            "evidence_found": [
+              false,
+              false
+            ],
+            "context_contains_answer_markers": false,
+            "content_score": 0,
+            "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+          },
+          "rubric_score": null
+        },
+        {
+          "id": 5,
+          "question": "Thời gian xử lý yêu cầu Trả hàng / Hoàn tiền là bao lâu?",
+          "gold_answer": "Đối với Người mua, yêu cầu Trả hàng/Hoàn tiền thường được Shopee xử lý trong khoảng 3 - 5 ngày làm việc; thời gian nhận tiền hoàn từ 1 - 14 ngày làm việc.",
+          "gold_source": "`79233.md` (Mục 2)",
+          "metadata_filter": {
+            "audience": "buyer"
+          },
+          "results": [
+            {
+              "id": "189477#11",
+              "content": "Yêu cầu trả hàng được chấp nhận\n\nThông tin trả hàng (Đơn vị vận chuyển, mã vận đơn trả hàng) được điền đầy đủ và chính xác trên ứng dụng Shopee\n\nMã vận đơn phải kiểm tra được hành trình và có trạng thái giao hàng thành công tới Người nhận\n\nNgười bán/Shopee đồng ý hoàn tiền cho bạn\n\nĐơn hàng không sử dụng phương thức Người bán tự vận chuyển khi giao đến bạn trước đó\n\n⚠️Lưu ý: ",
+              "metadata": {
+                "doc_id": "189477",
+                "title": "[Trả hàng/ Hoàn tiền] Các phương thức gửi hàng hoàn trả và phí hoàn trả | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/189477",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "buyer",
+                "category": "shipping-fee",
+                "language": "vi",
+                "chunk_index": 11
+              },
+              "score": 0.2122217829848205
+            },
+            {
+              "id": "188931#0",
+              "content": "# [Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee | Shopee Trung tâm trợ giúp\n\n[Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee | Shopee Trung tâm trợ giúp\n\nXin chào, Shopee có thể giúp gì cho bạn?\n\n[Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee\n\n1. Điều kiện Trả hàng/Hoàn tiền của Shopee\n\n1.1. Nguyên tắc chung",
+              "metadata": {
+                "doc_id": "188931",
+                "title": "[Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/188931",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "buyer",
+                "category": "returns-policy",
+                "language": "vi",
+                "chunk_index": 0
+              },
+              "score": 0.20766965350348066
+            },
+            {
+              "id": "79467#4",
+              "content": "⚠️ Lưu ý: Khi bạn cần gửi trả sản phẩm, Shopee khuyến khích bạn quay lại video đóng kiện hàng hoàn trả. Video này cũng cần đáp ứng các tiêu chí tương tự video mở hàng (quay xuyên suốt, rõ nét) và thể hiện rõ tình trạng sản phẩm (niêm phong, tem nhãn) và quá trình đóng gói\n\n \n\n3. Khiếu nại hàng giả/nhái\n\nĐối với trường hợp đặc biệt này, bạn cần chuẩn bị thêm bằng chứng chứng minh sản phẩm nhận được là hàng giả/nhái.\n\nDưới đây là một số ví dụ về bằng chứng bạn có thể cung cấp:\n\nLoại bằng chứng",
+              "metadata": {
+                "doc_id": "79467",
+                "title": "[Trả hàng/Hoàn tiền] Hướng dẫn chuẩn bị bằng chứng khi yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp",
+                "source_url": "https://help.shopee.vn/portal/4/article/79467",
+                "retrieved_at": "2026-09-20",
+                "document_version": "not-stated",
+                "audience": "buyer",
+                "category": "returns-process",
+                "language": "vi",
+                "chunk_index": 4
+              },
+              "score": 0.1982934055136734
+            }
+          ],
+          "agent_answer": "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n[1] (Nguồn: 189477):\nYêu cầu trả hàng được chấp nhận\n\nThông tin trả hàng (Đơn vị vận chuyển, mã vận đơn trả hàng) được điền đầy đủ và chính xác trên ứng dụng Shopee\n\nMã vận đơn phải kiểm tra được hành trình và có trạng thái giao hàng thành công tới Người nhận\n\nNgười bán/Shopee đồng ý hoàn tiền cho bạn\n\nĐơn hàng không sử dụng phương thức Người bán tự vận chuyển khi giao đến bạn trước đó\n\n⚠️Lưu ý:\n\n[2] (Nguồn: 188931):\n# [Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee | Shopee Trung tâm trợ giúp\n\n[Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee | Shopee Trung tâm trợ giúp\n\nXin chào, Shopee có thể giúp gì cho bạn?\n\n[Trả hàng/Hoàn tiền] Những quy định chung về Trả hàng/Hoàn tiền của Shopee\n\n1. Điều kiện Trả hàng/Hoàn tiền của Shopee\n\n1.1. Nguyên tắc chung\n\n[3] (Nguồn: 79467):\n⚠️ Lưu ý: Khi bạn cần gửi trả sản phẩm, Shopee khuyến khích bạn quay lại video đóng kiện hàng hoàn trả. Video này cũng cần đáp ứng các tiêu chí tương tự video mở hàng (quay xuyên suốt, rõ nét) và thể hiện rõ tình trạng sản phẩm (niêm phong, tem nhãn) và quá trình đóng gói\n\n \n\n3. Khiếu nại hàng giả/nhái\n\nĐối với trường hợp đặc biệt này, bạn cần chuẩn bị thêm bằng chứng chứng minh sản phẩm nhận được là hàng giả/nhái.\n\nDưới đây là một số ví dụ về bằng chứng bạn có thể cung cấp:\n\nLoại bằng chứng",
+          "evaluation": {
+            "gold_document_rank": null,
+            "document_only_score": 0,
+            "evidence_groups": [
+              [
+                "3 - 5 ngày làm việc"
+              ],
+              [
+                "1 - 14 ngày làm việc"
+              ]
+            ],
+            "evidence_found": [
+              false,
+              false
+            ],
+            "context_contains_answer_markers": false,
+            "content_score": 0,
+            "note": "Heuristic evidence score only; inspect meaning/conditions and agent answer manually."
+          },
+          "rubric_score": null
+        }
+      ],
+      "same_top3": false
+    }
+  ]
+}
