@@ -3,10 +3,12 @@ __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
+.pytest_temp/
 
 # Environment
 .env
 .env.local
+.gemini_embeddings_cache.json
 
 # OS
 .DS_Store

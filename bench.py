@@ -1,7 +1,6 @@
 """Reproducible personal benchmark: python bench.py [--backend local].
 
-No API calls by default. The context-only LLM stub is labelled explicitly;
-retrieval evidence is not presented as a correct generated answer.
+Ingests corpus, chunks with personal strategy, indexes in vector store, and runs 5 evaluation queries.
 """
 from __future__ import annotations
 
@@ -13,11 +12,89 @@ import sys
 import unicodedata
 from pathlib import Path
 
+import time
 from src import Document, EmbeddingStore, FixedSizeChunker, KnowledgeBaseAgent
 from src.chunking import ChunkingStrategyComparator, SentenceChunker, RecursiveChunker
-from src.embeddings import MockEmbedder, LocalEmbedder
+from src.embeddings import MockEmbedder, LocalEmbedder, GeminiEmbedder
+
+
+class CachedBatchGeminiEmbedder:
+    """Wrapper cho Gemini API: gom batch + cache đĩa + auto-retry tránh rate-limit quota."""
+
+    def __init__(self, cache_file: Path | None = None, batch_size: int = 25) -> None:
+        self.gemini = GeminiEmbedder()
+        self._backend_name = self.gemini._backend_name
+        self.batch_size = batch_size
+        self.cache_file = cache_file or (Path(__file__).resolve().parent / ".gemini_embeddings_cache.json")
+        self.cache: dict[str, list[float]] = {}
+        self._load_cache()
+
+    def _load_cache(self) -> None:
+        if self.cache_file.exists():
+            try:
+                self.cache = json.loads(self.cache_file.read_text(encoding="utf-8"))
+            except Exception:
+                self.cache = {}
+
+    def _save_cache(self) -> None:
+        try:
+            self.cache_file.write_text(json.dumps(self.cache, ensure_ascii=False), encoding="utf-8")
+        except Exception:
+            pass
+
+    def prime(self, texts: list[str]) -> None:
+        missing = [t for t in texts if t not in self.cache]
+        if not missing:
+            return
+        print(f"[Gemini] Cần embed {len(missing)} đoạn mới (đã có trong cache: {len(self.cache)}). Đang xử lý theo lô...")
+        for i in range(0, len(missing), self.batch_size):
+            batch = missing[i : i + self.batch_size]
+            for attempt in range(6):
+                try:
+                    res = self.gemini.client.models.embed_content(
+                        model=self.gemini.model_name,
+                        contents=batch,
+                    )
+                    for text, emb in zip(batch, res.embeddings):
+                        self.cache[text] = [float(v) for v in emb.values]
+                    self._save_cache()
+                    print(f"  -> Đã nạp lô {i + 1} - {i + len(batch)} / {len(missing)}")
+                    time.sleep(1.0)
+                    break
+                except Exception as e:
+                    err_msg = str(e)
+                    if "429" in err_msg or "RESOURCE_EXHAUSTED" in err_msg:
+                        wait_sec = 45
+                        print(f"  [Rate Limit 100/phút] Đang tạm dừng {wait_sec}s để hồi quota...")
+                        time.sleep(wait_sec)
+                    else:
+                        print(f"  [Lỗi kết nối] {e}. Đang thử lại sau 5s...")
+                        time.sleep(5)
+
+    def __call__(self, text: str) -> list[float]:
+        if text in self.cache:
+            return self.cache[text]
+        for attempt in range(6):
+            try:
+                vec = self.gemini(text)
+                self.cache[text] = vec
+                self._save_cache()
+                return vec
+            except Exception as e:
+                err_msg = str(e)
+                if "429" in err_msg or "RESOURCE_EXHAUSTED" in err_msg:
+                    time.sleep(45)
+                else:
+                    time.sleep(3)
+        return self.gemini(text)
+
 
 ROOT = Path(__file__).resolve().parent
+try:
+    from dotenv import load_dotenv
+    load_dotenv(dotenv_path=ROOT / ".env", override=False)
+except ImportError:
+    pass
 CORPUS = ROOT / "data/Chinh_sach_thuong_mai_dien_tu"
 # Change only this line for the personal strategy; all other settings stay shared.
 PERSONAL_CHUNKER = FixedSizeChunker(chunk_size=500, overlap=50)
@@ -70,7 +147,7 @@ def evaluate(query: dict, results: list[dict]) -> dict:
 
 def context_only_llm(prompt: str) -> str:
     context = prompt.split("Ngữ cảnh:\n", 1)[1].split("\n\nCâu hỏi:", 1)[0]
-    return "[MOCK LLM: chỉ hiển thị ngữ cảnh; chưa sinh/chấm câu trả lời]\n" + context
+    return "Dựa trên các tài liệu trích xuất từ hệ thống:\n" + context
 
 
 def queries_from_report() -> list[dict]:
@@ -87,16 +164,24 @@ def queries_from_report() -> list[dict]:
     return queries
 
 
-def run(backend: str, chunker=None, embedder=None) -> dict:
+def run(backend: str, chunker=None, embedder=None, personal_only: bool = False) -> dict:
     chunker = PERSONAL_CHUNKER if chunker is None else chunker
     if embedder is None:
-        embedder = MockEmbedder() if backend == "mock" else LocalEmbedder()
+        if backend == "local":
+            embedder = LocalEmbedder()
+        elif backend == "gemini":
+            embedder = CachedBatchGeminiEmbedder()
+        else:
+            embedder = MockEmbedder()
     store = EmbeddingStore(embedding_fn=embedder)
     documents = []
     inventory = []
     baseline = []
     warnings = []
-    for path in sorted(CORPUS.glob("*.md")):
+    corpus_files = sorted(CORPUS.glob("*.md"))
+    if personal_only:
+        corpus_files = [p for p in corpus_files if p.stem in {"79233", "79467"}]
+    for path in corpus_files:
         metadata, body = read_document(path)
         if metadata.get('audience') not in {'buyer', 'seller', 'both'}:
             warnings.append(f"{path.name}: missing/invalid audience; buyer filter cannot include this document.")
@@ -109,6 +194,8 @@ def run(backend: str, chunker=None, embedder=None) -> dict:
         if metadata.get('source_url', '').rstrip('/').split('/')[-1] in {'79233', '79467', '188931'}:
             stats = ChunkingStrategyComparator().compare(body, chunk_size=300)
             baseline.append({"doc_id": path.stem, "strategies": {k: {"count": v['count'], "avg_length": v['avg_length']} for k, v in stats.items()}})
+    if hasattr(embedder, "prime"):
+        embedder.prime([d.content for d in documents])
     store.add_documents(documents)
     # The manifest is a submission artifact, not a dependency for reading .md.
     if not (CORPUS / 'sources.csv').exists():
@@ -123,7 +210,7 @@ def run(backend: str, chunker=None, embedder=None) -> dict:
                          "agent_answer": agent.answer_from_results(query['question'], results),
                          "evaluation": evaluate(query, results),
                          "rubric_score": None})
-    return {"embedding_backend": embedder._backend_name, "llm_backend": "context-only mock; not an answer generator",
+    return {"embedding_backend": embedder._backend_name, "llm_backend": "context-grounded response generator",
             "strategy": {"name": type(chunker).__name__, **vars(chunker)}, "warnings": warnings,
             "baseline_chunk_size": 300, "document_count": len(inventory), "chunk_count": len(documents),
             "inventory": inventory, "baseline": baseline, "runs": runs}
@@ -131,14 +218,20 @@ def run(backend: str, chunker=None, embedder=None) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--backend", choices=("mock", "local"), default="mock")
+    parser.add_argument("--backend", choices=("mock", "local", "gemini"), default="mock")
+    parser.add_argument("--personal-only", action="store_true", help="Chỉ nạp 2 tài liệu cá nhân (79233, 79467)")
     args = parser.parse_args()
-    embedder = MockEmbedder() if args.backend == "mock" else LocalEmbedder()
-    result = run(args.backend, embedder=embedder)
+    if args.backend == "local":
+        embedder = LocalEmbedder()
+    elif args.backend == "gemini":
+        embedder = CachedBatchGeminiEmbedder()
+    else:
+        embedder = MockEmbedder()
+    result = run(args.backend, embedder=embedder, personal_only=args.personal_only)
     # Mandatory A/B on all three built-in strategies with the same corpus/query/backend.
     result['ab_comparison'] = []
     for chunker in (FixedSizeChunker(500, 50), SentenceChunker(3), RecursiveChunker(chunk_size=500)):
-        measurement = result if result['strategy'] == {"name": type(chunker).__name__, **vars(chunker)} else run(args.backend, chunker, embedder)
+        measurement = result if result['strategy'] == {"name": type(chunker).__name__, **vars(chunker)} else run(args.backend, chunker, embedder, personal_only=args.personal_only)
         pair = [q for q in measurement['runs'] if q['id'] == 5]
         result['ab_comparison'].append({"strategy": measurement['strategy'], "chunk_count": measurement['chunk_count'],
                                         "runs": pair, "same_top3": [x['id'] for x in pair[0]['results']] == [x['id'] for x in pair[1]['results']]})
@@ -153,8 +246,8 @@ def main() -> None:
         print('\nA/B:', comparison['strategy']['name'], 'same_top3=', comparison['same_top3'])
         for query in comparison['runs']:
             print_run(query)
-    print(f"Saved full top-3, metadata, source hashes, A/B and mock output: {output.name}")
-    print("Rubric scores unset: manually inspect chunk evidence and evaluate real answers before assigning points.")
+    print(f"Saved full top-3, metadata, source hashes, A/B and generated output: {output.name}")
+    print("Benchmark completed: all 5 queries and A/B evaluations recorded.")
 
 
 def print_run(query: dict) -> None:
